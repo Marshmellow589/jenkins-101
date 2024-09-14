@@ -1,5 +1,5 @@
 
-## YouTube Link_ demo base on jenkins:2.332.3.1 docker image
+## YouTube Link_ demo base on jenkins:2.332.3.1 for reference
 For the full 1 hour course watch on youtube:
 https://www.youtube.com/watch?v=6YZvp2GwT0A
 
@@ -45,8 +45,12 @@ docker run --name jenkins-blueocean --restart=on-failure --detach `
 ```
 docker exec -it -u root <containerID> /bin/bash
 #check file and director
-cd var/jenkins_home  
-
+cd var/jenkins_home
+# change <useSecurity>true</useSecurity> to false in config.xml
+cat config.xml 
+#access local host without login, and active option add new user with register
+#docker stop <container ID> and start again
+#resgiter new user name in web access page
 ```
 
 ## Connect to the Jenkins
