@@ -16,6 +16,9 @@ docker pull devopsjourney1/jenkins-blueocean:latest && docker tag devopsjourney1
 ## Create the network 'jenkins'
 ```
 docker network create jenkins
+
+## check docker network list
+docker network ls
 ```
 
 ## Run the Container
